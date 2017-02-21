@@ -14,101 +14,101 @@ import static org.junit.Assert.assertEquals;
  */
 public class AVLTreeTest {
 
-	@Test
-	public void testInsertRotateNormal() throws Exception {
-		AVLTree<Integer> tree = new AVLTree<>();
-		insertRotateNormal(tree);
-	}
+    @Test
+    public void testInsertRotateNormal() throws Exception {
+        AVLTree<Integer> tree = new AVLTree<>();
+        insertRotateNormal(tree);
+    }
 
-	private void insertRotateNormal(AVLTree<Integer> tree) {
-		List<Integer> values;
+    private void insertRotateNormal(AVLTree<Integer> tree) {
+        List<Integer> values;
 
-		tree.insert(10);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Collections.singletonList(10));
+        tree.insert(10);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Collections.singletonList(10));
 
-		tree.insert(15);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(10, 15));
+        tree.insert(15);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(10, 15));
 
-		tree.insert(20);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(15, 10, 20));
-
-
-		tree.insert(25);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(15, 10, 20, 25));
+        tree.insert(20);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(15, 10, 20));
 
 
-		tree.insert(30);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(15, 10, 25, 20, 30));
+        tree.insert(25);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(15, 10, 20, 25));
 
 
-		tree.insert(35);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(25, 15, 10, 20, 30, 35));
+        tree.insert(30);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(15, 10, 25, 20, 30));
 
 
-		tree.insert(40);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(25, 15, 10, 20, 35, 30, 40));
+        tree.insert(35);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(25, 15, 10, 20, 30, 35));
 
-	}
 
-	@Test
-	public void testInsertNormalize() throws Exception {
-		insertNormalize1(new AVLTree<>());
-		insertNormalize2(new AVLTree<>());
-	}
+        tree.insert(40);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(25, 15, 10, 20, 35, 30, 40));
 
-	private void insertNormalize2(AVLTree<Integer> tree) {
-		List<Integer> values;
+    }
 
-		tree.insert(10);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Collections.singletonList(10));
+    @Test
+    public void testInsertNormalize() throws Exception {
+        insertNormalize1(new AVLTree<>());
+        insertNormalize2(new AVLTree<>());
+    }
 
-		tree.insert(5);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(10, 5));
+    private void insertNormalize2(AVLTree<Integer> tree) {
+        List<Integer> values;
 
-		tree.insert(7);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(7, 5, 10));
+        tree.insert(10);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Collections.singletonList(10));
 
-	}
+        tree.insert(5);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(10, 5));
 
-	private void insertNormalize1(AVLTree<Integer> tree) {
-		List<Integer> values;
+        tree.insert(7);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(7, 5, 10));
 
-		tree.insert(10);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Collections.singletonList(10));
+    }
 
-		tree.insert(20);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(10, 20));
+    private void insertNormalize1(AVLTree<Integer> tree) {
+        List<Integer> values;
 
-		tree.insert(15);
-		values=tree.traverse();
-		System.out.println(values);
-		assertEquals(values, Arrays.asList(15, 10, 20));
+        tree.insert(10);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Collections.singletonList(10));
 
-	}
+        tree.insert(20);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(10, 20));
+
+        tree.insert(15);
+        values = tree.traverse();
+        System.out.println(values);
+        assertEquals(values, Arrays.asList(15, 10, 20));
+
+    }
 
 
 }
