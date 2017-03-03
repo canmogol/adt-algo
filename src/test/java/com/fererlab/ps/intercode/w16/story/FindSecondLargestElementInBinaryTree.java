@@ -9,7 +9,7 @@ public class FindSecondLargestElementInBinaryTree extends BaseJUnitStory {
 
     @Override
     public List<?> getSteps() {
-        return Collections.singletonList(new FindSecondLargestBinaryTreeTest());
+        return Collections.singletonList(new FindSecondLargestBinaryTreeSteps());
     }
 
 }

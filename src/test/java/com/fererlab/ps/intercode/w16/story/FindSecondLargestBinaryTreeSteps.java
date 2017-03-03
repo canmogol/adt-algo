@@ -1,14 +1,14 @@
 package com.fererlab.ps.intercode.w16.story;
 
+import com.fererlab.ps.intercode.w16.BinaryTreeNode;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-import static com.fererlab.ps.intercode.w16.FindSecondLargestBinaryTree.BinaryTreeNode;
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
-public class FindSecondLargestBinaryTreeTest {
+public class FindSecondLargestBinaryTreeSteps {
 
     private BinaryTreeNode binaryTree;
     private Integer secondLargestFound;
