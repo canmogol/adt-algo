@@ -8,7 +8,7 @@ after_success:
 notifications:
   webhooks:
     urls:
-      - https://webhooks.gitter.im/e/747bd9b707008360cf3c
+      - https://webhooks.gitter.im/e/31d1a4f0c3a5963bbf74
     on_success: always
     on_failure: always
     on_start: never     # options: [always|never|change]
