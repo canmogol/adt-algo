@@ -6,12 +6,8 @@ public class StockPricesYesterday {
         int min = stockPricesYesterday[0];
         int max = stockPricesYesterday[1];
         for (int i = 0; i < stockPricesYesterday.length - 1; i++) {
-            if (stockPricesYesterday[i] < min) {
-                min = stockPricesYesterday[i];
-            }
-            if (stockPricesYesterday[i + 1] > max) {
-                max = stockPricesYesterday[i + 1];
-            }
+            min = Math.min(min, stockPricesYesterday[i]);
+            max = Math.max(max, stockPricesYesterday[i + 1]);
         }
         return (max - min > 0 ? max - min : 0);
     }
