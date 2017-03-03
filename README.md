@@ -1,4 +1,6 @@
 # adt-algo
+
+[![Join the chat at https://gitter.im/canmogol/adt-algo](https://badges.gitter.im/canmogol/adt-algo.svg)](https://gitter.im/canmogol/adt-algo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 abstract data types and algorithms
 
 
